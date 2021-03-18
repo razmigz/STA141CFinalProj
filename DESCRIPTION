@@ -1,0 +1,29 @@
+Package: blblm
+Type: Package
+Title: Create a Linear Regression model using BLB (Bag of Little Bootstraps)
+Version: 0.1.0
+Author: Razmig Zeitounian
+Maintainer: Razmig Zeitounian <rzeitounian@ucdavis.edu>
+Description: Estimate a Linear Model using BLB (Bag of Little Bootstraps).
+    Can get values like coefficient, sigma, etc. from model with the option to parallelize computations.
+    Parallelizing is only recommended for larger data.frame objects
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat (>= 2.1.0),
+    knitr,
+    rmarkdown
+Imports: 
+    purrr,
+    magrittr,
+    Rcpp,
+    furrr,
+    future,
+    utils
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+VignetteBuilder: knitr
+LinkingTo: 
+    RcppArmadillo,
+    Rcpp
